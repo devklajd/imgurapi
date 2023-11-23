@@ -1,0 +1,21 @@
+.heading {
+ text-align: center;
+ font-size: 140px;
+ font-weight: bold;
+ margin-top: 150px;
+ opacity: 0.4;
+ color: #fff;
+}
+
+.description {
+    text-align: center;
+color: #fff;
+opacity: 0.9;
+}
+
+.link {
+    text-align: center;
+    color: #fa923f;
+    text-decoration: none;
+    
+}

@@ -1,0 +1,204 @@
+.header {
+    background: rgba(0, 0, 0, 0.85);
+    min-height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    color: #fff;
+    
+}
+
+.logo {
+    font-family: 'Bevan', cursive;
+    font-size: 50px;
+    color: #fff;
+}
+
+.header-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.header-wrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.header-wrapper li {
+    display: inline-block;
+    
+    color: #fff;
+    margin: 0 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: relative;
+}
+.section li {
+    margin: 20px;
+    line-height: 40px;
+}
+.windowSort li {
+    margin: 0 10px;
+}
+li.active {
+    color: #fa923f;
+}
+
+.active:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    /* bottom: -4px; */
+    margin: 0 auto;
+    left: 0;
+    /* right: 0; */
+    width: 100%;
+    background: green;
+    transition: .5s;
+}
+
+.header-wrapper a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-wrapper a:hover,
+.header-wrapper a:active,
+.header-wrapper a.active {
+    color: #fa923f;
+}
+
+
+ .flex-grid {
+  display: flex;
+}
+
+.flex-grid .col {
+  flex: 1;
+}
+
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-grid-thirds .col {
+  width: 32%;
+}
+
+@media (max-width: 400px) {
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block;
+  }
+  .flex-grid .col,
+  .flex-grid-thirds .col {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
+
+
+.flex-grid {
+  margin: 0 0 20px 0;
+}
+
+.col {
+  /* background: salmon; */
+  /* padding: 20px; */
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    float: right;
+    margin-top: 2px;
+
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .colContainer {
+    text-align: center;
+    line-height: 38px;
+    margin-top: 20px;
+  }
+  .viralLabel{
+      display: inline;;
+      padding-right: 10px;
+      float: right;
+  }
+
+  .topDraw{
+    background: #2e3035;
+    padding: 10px 4px;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 14px;
+    margin: 0 20px;
+  }
+  .topDraw span{
+      padding-right: 20px;
+  }
