@@ -11,7 +11,7 @@ router.get('/:id', (req, res, next) => {
     console.log(url);
 
     axios({
-        method: 'post',
+        method: 'get',
         url: url,
         headers: {
             'Authorization': 'Client-ID ' + CLIENT_ID
@@ -35,7 +35,7 @@ router.post('', (req, res, next) => {
     console.log(url);
 
     axios({
-        method: 'post',
+        method: 'get',
         url: url,
         headers: {
             'Authorization': 'Client-ID ' + CLIENT_ID
